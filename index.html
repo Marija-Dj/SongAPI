@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <title>Song Finder</title>
+    <style>
+      body {
+        display: grid;  
+        background: lightseagreen;
+        text-align: center; 
+        padding: 10px; 
+        font-size: 1.2em;
+       }
+      h1 {
+        font-family: 'New Tegomin', serif;
+      }
+      .search{
+        border: 2px solid #ced4da;
+        border-radius: 4px;
+        padding: .375rem .75rem;
+        outline:none;
+        }
+      .search:focus {
+        border-color:#1ecbff;
+        box-shadow: 0 0 8px 0 #1ecbff; 
+        }
+      main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1 class="m-3"> Song Fiderer</h1>
+            <label class="p-3" for="searchInput">Search for your favorite artist or song</label>
+            <input class="search me-2" type="text" id="searchInput">
+            
+            <button class="btn btn-success m-2" type="button">Search!</button>
+            <hr/>
+        </header>
+
+      <main id="songs">
+       <!-- <article class="item">
+            <img alt="" width="100" height="100" style="background: blueviolet;">
+            <p> Ed Sheeran </p>
+            <p>Shape of you</p>
+            <audio src="" controls></audio>
+        </article> -->
+    
+
+    </main>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
